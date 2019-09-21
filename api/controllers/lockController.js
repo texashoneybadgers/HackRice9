@@ -50,7 +50,8 @@ exports.view = function (req, res) {
 };
 
 exports.update = function(req, res) {
-	lock = Lock.findById(req.params.lock_id, function(err, contact) {
+	Lock.findById(req.params.lock_id, function(err, lock) {
+		console.log("got here");
 		if (err)
 			res.send(err);
 		lock.name = req.body.name ? req.body.name : lock.name;
