@@ -1,0 +1,33 @@
+{
+  "name": "hackrice9",
+  "version": "1.0.0",
+  "description": "Project for HackRice9",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/texashoneybadgers/HackRice9.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Ryan Hall, Emily Murphy, CJ Sewell, Spence Simmons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/texashoneybadgers/HackRice9/issues"
+  },
+  "homepage": "https://github.com/texashoneybadgers/HackRice9#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0"
+  }
+}
