@@ -1,30 +1,38 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const Lock = require('./api/models/lock');
+// Import express
+let express = require('express');
+// Import body-parser
+let bodyParser = require('body-parser');
+// Import Mongoose
+let mongoose = require('mongoose');
+//Initialise app
+let app = express();
 
-app.use(bodyParser.urlencoded({ extended: true}));
+// Import routes
+let apiRoutes = require('./api/routes/lockRoute');
+
+// Configure body parser to handle post requests
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+
 app.use(bodyParser.json());
 
-mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/locks');
+// Connect to Mongoose and set connection variable
+mongoose.connect('mongodb://localhost/rice', {useNewUrlParser: true});
+var db = mongoose.connection;
 
-app.use(function(req, res, next){
-	console.log('we use the router, and next moves to the enxt requrests');
-	next();
-})
+// Checking for database connection
+if (!db)
+	console.log("Error connecting to the database!")
+else
+	console.log("Connected to the database successfully")
 
-app.get('/', function(req, res) {
-	res.json({ message: 'You did it! Great job!'});
+// Setup server port
+var port = process.env.PORT || 8080;
+
+//Use API routes in the app
+app.use('/api', apiRoutes);
+//Launch app to listen to specified port
+app.listen(port, function() {
+	console.log('Running LockRice on port ' + port);
 });
-
-app.get('/api/locks', function(req, res) {
-	console.log('GET locks');
-	Lock.find({}).then(eachOne => {
-		res.json(eachOne);
-	})
-})
-
-app.listen(3000);
-console.log('starting application. Good job!');
