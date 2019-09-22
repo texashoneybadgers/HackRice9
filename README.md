@@ -4,7 +4,8 @@ At HackRice9, we had a high goal: combine hardware and software to create a proj
 # How OccuPotty Works
 To simulate an engaged and unengaged lock, we bought a plank of wood and attached two sliding locks (one made of zinc and one of brass) to it. Prior to that, CJ and Spence worked on the circuitry of the breadboard to the Arduino and used PyFirmata to make it fully functioning. On the software side, Emily worked on the website design in Bootstrap Studio and Ryan worked on creating the API and configuring the database. Once everything was fully functioning separately, we connected all three components and officially completed a fully functioning lock monitoring system. Below is a demo of what how our system worked:
 
-![OccuPotty](https://i.imgur.com/ImF3k1s.mp4)
+[![hackrice.gif](https://i.postimg.cc/cCMwb5W0/hackrice.gif)](https://postimg.cc/ctCvKh6b)
+
 # Contributors
 **Ryan Hall** - Know-It-All - API/Integration - [GitHub](https://github.com/ryancorridor)
 
