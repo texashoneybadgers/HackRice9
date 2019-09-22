@@ -5,13 +5,13 @@ At HackRice9, we had a high goal: combine hardware and software to create a proj
 To simulate an engaged and unengaged lock, we bought a plank of wood and attached two sliding locks (one made of zinc and one of brass) to it. Prior to that, CJ and Spence worked on the circuitry of the breadboard to the Arduino and used PyFirmata to make it fully functioning. On the software side, Emily worked on the website design in Bootstrap Studio and Ryan worked on creating the API and configuring the database. Once everything was fully functioning separately, we connected all three components and officially completed a fully functioning lock monitoring system. Below is a demo of what how our system worked:
 
 # Contributors
-**Ryan Hall** - Know-It-All - API/Integration - [RyanHall](https://github.com/ryancorridor)
+**Ryan Hall** - Know-It-All - API/Integration - [GitHub](https://github.com/ryancorridor)
 
-**Emily Murphy** - Team Dictator - Web Design - [EmilyMurphy](https://github.com/emurph1)
+**Emily Murphy** - Team Dictator - Web Design - [GitHub](https://github.com/emurph1)
 
-**CJ Sewell** - The Chameleon - Electrical System Integration - [CJSewell](https://github.com/Chao07)
+**CJ Sewell** - The Chameleon - Electrical System Integration - [GitHub](https://github.com/Chao07)
 
-**Spence Simmons** - T-Sip - Electrical System Integration - [SpenceSimmons](https://github.com/SpenceSimm)
+**Spence Simmons** - T-Sip - Electrical System Integration - [GitHub](https://github.com/SpenceSimm)
 
 
 # Challenges We Faced
