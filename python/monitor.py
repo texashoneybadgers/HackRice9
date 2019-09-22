@@ -8,7 +8,7 @@ URL = "http://localhost:8080/api/locks/"
 
 # Initializes board
 # board = Arduino('COM6')
-board = Arduino('/dev/cu.usbmodem1412401')
+board = Arduino('/dev/cu.usbmodem1422201')
 
 count = 0
 
