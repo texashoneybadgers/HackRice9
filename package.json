@@ -24,8 +24,8 @@
   "homepage": "https://github.com/texashoneybadgers/HackRice9#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0"
